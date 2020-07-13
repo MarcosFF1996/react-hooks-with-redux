@@ -1,4 +1,3 @@
-# redux-with-react-hooks
 # Usando Redux com React Hooks no React-Native
 
 Esse é um exemplo bem simples de como consumir uma API da internet no React-Native usando Redux com React Hooks.
@@ -22,7 +21,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 ```
 
-Criação da state `dados`, onde será salvo todo o conteúdo requisitado no API.
+Criação da state `dados`, onde será salvo todo o conteúdo requisitado na API.
 
 ```js
 const [dados, setDados] = useState([]);
@@ -52,5 +51,4 @@ Senão, iremos exibir a mensagem `Carregando` para o usuário.
         {dados.map((item) => <Text key={item.id}>{item.title}</Text>)}
     </View>:<Text>Carregando</Text>
 }
-);
 ```
